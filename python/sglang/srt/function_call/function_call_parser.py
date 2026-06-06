@@ -36,6 +36,9 @@ from sglang.srt.function_call.mistral_detector import MistralDetector
 from sglang.srt.function_call.poolside_v1_detector import PoolsideV1Detector
 from sglang.srt.function_call.pythonic_detector import PythonicDetector
 from sglang.srt.function_call.qwen3_coder_detector import Qwen3CoderDetector
+from sglang.srt.function_call.qwen3_coder_streaming_detector import (
+    Qwen3CoderStreamingDetector,
+)
 from sglang.srt.function_call.qwen25_detector import Qwen25Detector
 from sglang.srt.function_call.step3_detector import Step3Detector
 from sglang.srt.function_call.trinity_detector import TrinityDetector
@@ -78,6 +81,7 @@ class FunctionCallParser:
         "qwen": Qwen25Detector,
         "qwen25": Qwen25Detector,
         "qwen3_coder": Qwen3CoderDetector,
+        "qwen3_coder_streaming": Qwen3CoderStreamingDetector,
         "step3": Step3Detector,
         "step3p5": Qwen3CoderDetector,
         "minimax-m2": MinimaxM2Detector,
